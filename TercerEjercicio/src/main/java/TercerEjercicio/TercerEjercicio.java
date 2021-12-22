@@ -265,7 +265,7 @@ public class TercerEjercicio {
 		return nivelCalidad;
 	}
 
-	public static void main(String[] args) {
+	static void introducirValores() {
 		Scanner TECLADO = new Scanner(System.in);
 		try {
 			System.out.println("Introduzca la medici�n base de la completitud funcional: ");
@@ -351,5 +351,9 @@ public class TercerEjercicio {
 		} catch (InputMismatchException ex) {
 			System.out.println("[ERROR] Caracter introducido err�neo. Finalizando el programa ...");
 		}
+	}
+
+	public static void main(String[] args) {
+		introducirValores();
 	}
 }
